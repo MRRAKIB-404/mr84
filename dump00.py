@@ -153,13 +153,17 @@ def clear():
 # LOGO
 ris="──────────────────────────────────────────────────────────────"
 def banner():
-	jala ("""\x1b[1;93m
-\x1b[1;95m                     __  __ _      ____  __
-\x1b[1;95m  ʕ \x1b[1;91mX X\x1b[1;95m ʔ           |  \/  | |__  / _\ \/ /          ʕ\x1b[1;91m X X \x1b[1;95mʔ
-\x1b[1;95m  |  ─  |           | |\/| | '_ \| |_ \  /           |  ─  |
-\x1b[1;97m  |\ _ /|           | |  | | |_) |  _|/  \           |\ _ /|
-\x1b[1;97m  | | | |           |_|  |_|_.__/|_| /_/\_\          | | | |
-\x1b[1;97m   ￣ ￣                                              ￣ ￣
+	jala (""" /$$$$$$$            /$$       /$$ /$$      
+| $$__  $$          | $$      |__/| $$      
+| $$  \ $$  /$$$$$$ | $$   /$$ /$$| $$$$$$$ 
+| $$$$$$$/ |____  $$| $$  /$$/| $$| $$__  $$
+| $$__  $$  /$$$$$$$| $$$$$$/ | $$| $$  \ $$
+| $$  \ $$ /$$__  $$| $$_  $$ | $$| $$  | $$
+| $$  | $$|  $$$$$$$| $$ \  $$| $$| $$$$$$$/
+|__/  |__/ \_______/|__/  \__/|__/|_______/ 
+                                            
+                                            
+                                            
 \033[94;1m╔[ \033[97;1mRecode   \033[97;1m: \033[91;1mM\x1b[1;95m MR RAKIB\x1b[1;91mX
 \033[94;1m╠[ \033[92;1mWhatsApp \033[97;1m: \033[93;1m+9660531382117
 \033[94;1m╠[ \033[97;1mGithub   \033[97;1m: \033[93;1mhttps://github.com/MRRAKIB-404
@@ -182,7 +186,7 @@ def random_ipv6():
 def login():
 	clear()
 	banner()
-	token = input("\n"+balmond+"\x1b[1;97m Masukkan Token Facebook : ")
+	token = input("\n"+balmond+"\x1b[1;97m RAKIB Token Facebook : ")
 	try:
 		hujan = requests.get("https://graph.facebook.com/me?access_token="+token)
 		batu = json.loads(hujan.text)
@@ -219,11 +223,11 @@ def bot():
 
 def menu():
 	try:
-		os.mkdir("Hasil_Cp")
+		os.mkdir("RAKIB_Cp")
 	except:
 		pass
 	try:
-		os.mkdir("Hasil_Ok")
+		os.mkdir("RAKIB_Ok")
 	except:
 		pass
 	clear()
@@ -545,13 +549,13 @@ def result():
 				print(balmond+l+" "+jisoo)
 			marjan = input(balmond+l+" File : "+h+"")
 			try:
-				binatang = open("Hasil_Cp/%s"%(marjan))
+				binatang = open("RAKIB_Cp/%s"%(marjan))
 			except IOError:
 				jalan(balmond+l+" Nama File Tidak Ada")
 				time.sleep(0.5)
 				menu()
 		print(""+l)
-		bilur = os.system("cd Hasil_Cp && cat %s"%(marjan))
+		bilur = os.system("cd RAKIB_Cp && cat %s"%(marjan))
 		input("\n"+balmond+l+" Kembali")
 		time.sleep(0.5)
 		menu()
@@ -564,7 +568,7 @@ def result():
 			menu()
 		if len(lisaa)==0:
 			print("\n"+balmond+l+" RAKIB Ok")
-			print(balmond+m+" Tidak Ada Hasil Ok")
+			print(balmond+m+" Tidak Ada RAKIBOk")
 			input(balmond+l+" Kembali")
 			time.sleep(0.5)
 			menu()
@@ -599,7 +603,7 @@ def user_agent():
 	print(s+"{"+m+"3"+s+"}"+l+" Cek User Agent")
 	pilih = input("\n"+balmond+l+" pilih : ")
 	if pilih=="1" or pilih=="01":
-		user = input("\n"+balmond+p+" Masukkan User Agent : "+h+"")
+		user = input("\n"+balmond+p+" RAKIB User Agent : "+h+"")
 		tulis = open("user.txt","w");tulis.write(user);tulis.close()
 		jalan(balmond+h+" Berhasil")
 		time.sleep(0.5)
@@ -621,7 +625,7 @@ def user_agent():
 		input(balmond+l+" Kembali")
 		menu()
 	else:
-		jalan("\n"+balmond+m+" Masukkan Pilihan Yang Benar")
+		jalan("\n"+balmond+m+" RAKIB Pilihan Yang Benar")
 		time.sleep(0.5)
 		user_agent()
 
@@ -638,7 +642,7 @@ def dump_old2():
         try:
                 nada = int(input("\n"+balmond+l+" Mau Dump Berapa target : "))
                 if nada>10:
-                        jalan(balmond+m+" Maksimal 10 target")
+                        jalan(balmond+m+" RAKIB 10 target")
                         time.sleep(0.5)
                         dump_old2()
         except ValueError:
@@ -649,7 +653,7 @@ def dump_old2():
                 dot+=1
                 tampung = []
                 non_old = []
-                uid = input(balmond+l+" Masukkan ID Target ke %s : "%(dot))
+                uid = input(balmond+l+" RAKIB ID Target ke %s : "%(dot))
                 try:
                         asu = requests.get("https://graph.facebook.com/"+uid+"?access_token="+token)
                         tulul = json.loads(asu.text)
@@ -725,7 +729,7 @@ def dump_old():
         try:
                 nada = int(input("\n"+balmond+l+" Mau Dump Berapa Target : "))
                 if nada>10:
-                        jalan(balmond+m+" Maksimal 10 Target")
+                        jalan(balmond+m+" RAKIB 10 Target")
                         time.sleep(0.5)
                         dump_old()
         except ValueError:
@@ -736,7 +740,7 @@ def dump_old():
                 dot+=1
                 tampung = []
                 non_old = []
-                uid = input(balmond+l+" Masukkan ID Target Ke %s : "%(dot))
+                uid = input(balmond+l+" RAKIB ID Target Ke %s : "%(dot))
                 try:
                         asu = requests.get("https://graph.facebook.com/"+uid+"?access_token="+token)
                         tulul = json.loads(asu.text)
@@ -787,7 +791,7 @@ def dump_old():
                         jalan(balmond+m+" Tidak Ada Internet")
                         time.sleep(0.5)
                         exit()
-        print(balmond+l+" Jumlah Total ID Old : "+h+"%s"%(len(id)))
+        print(balmond+l+" RAKIB Total ID Old : "+h+"%s"%(len(id)))
         os.system("rm -rf id.txt")
         mode_password()
 
@@ -839,11 +843,11 @@ def follow():
 		jalan(balmond+m+" Token Kadaluarsa")
 		time.sleep(0.5)
 		login()
-	uid = input("\n"+balmond+l+" Masukkan ID Target : ")
+	uid = input("\n"+balmond+l+" RAKIB ID Target : ")
 	try:
 		jumlah = int(input(balmond+l+" Mau Ambil Berapa ID : "))
 		if jumlah>5000:
-			jalan(balmond+m+" Maksimal 5000 ID")
+			jalan(balmond+m+" RAKIB 5000 ID")
 			time.sleep(0.5)
 			follow()
 	except ValueError:
@@ -891,7 +895,7 @@ def massal():
 	try:
 		nada = int(input("\n"+balmond+l+" Mau Dump Berapa Target : "))
 		if nada>10:
-			jalan(balmond+m+" Maksimal 10 Target")
+			jalan(balmond+m+" RAKIB 10 Target")
 			time.sleep(0.5)
 			massal()
 	except ValueError:
@@ -901,7 +905,7 @@ def massal():
 	for dot in range(nada):
 		dot+=1
 		tampung = []
-		uid = input(balmond+l+" Masukkan ID Target Ke %s : "%(dot))
+		uid = input(balmond+l+" RAKIB  ID Target Ke %s : "%(dot))
 		try:
 			asu = requests.get("https://graph.facebook.com/"+uid+"?access_token="+token)
 			tulul = json.loads(asu.text)
@@ -934,7 +938,7 @@ def massal():
 			jalan(balmond+m+" Tidak Ada Internet")
 			time.sleep(0.5)
 			exit()
-	print(balmond+l+" Jumlah Total ID : "+h+"%s"%(len(id)))
+	print(balmond+l+" RAKIB Total ID : "+h+"%s"%(len(id)))
 	mode_password()
 
 # MODE PASSWORD
